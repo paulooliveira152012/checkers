@@ -1,0 +1,100 @@
+/* section 1 - document and board styling */
+/* section 2 - pieces */
+
+/* section 1 - document and board styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(7, 7, 36, 0.858);
+    margin-bottom: 50px;
+}
+
+.container {
+    margin-top: 200px;
+    margin: auto;
+    width: 90%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* flex: 1; */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.row {
+    margin: 1px;
+    width: 100%;
+    /* width: calc(100% / 8 - 2px); */
+    height: calc(100% / 8 - 2px);
+    background-color: blue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content:center; /* center horizontally */
+    align-items: center; /* center vertically */
+}
+
+.square:hover {
+    background-color: rgb(203, 212, 215);
+}
+
+.black {
+    height: 100%;;
+    width: 100%;
+    background-color: black;
+}
+
+.black:hover {
+    background-color: rgba(0, 0, 0, 0.526);
+}
+
+
+.identificador {
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.circulo {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    z-index: 2;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+
+.square.possible-move {
+    background-color: yellow;
+  }
+
+  .purple {
+    background-color: purple;
+  }
